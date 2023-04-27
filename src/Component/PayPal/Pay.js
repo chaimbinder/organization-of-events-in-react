@@ -10,16 +10,19 @@ function Pay() {
     console.log(inputValue);
  };
  useEffect(() => {
-
 }, [inputValue]);
   return (
     <>
          <input
    type="number"
+   style={{width: "250px" ,textAlign:"center",margin: "auto"}}
+
    name="name"
+   placeholder="הסכום לתשלום"
    onChange={onChangeHandler}
    value={inputValue}
 />
+<br></br>
     <PayPalButton
       currency="ILS"
       amount={inputValue}

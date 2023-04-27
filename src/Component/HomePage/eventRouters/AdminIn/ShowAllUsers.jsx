@@ -11,7 +11,6 @@ export default (props) => {
   const [vi, setVi] = useState([]);
 
   useEffect(() => {
-
     axios.get("http://localhost:3010/admin/ShowAllUsersAdmin").then((res) => {
       setArrUsers(res.data.GetIt);
       const tempArr = new Array(res.data.GetIt.length).fill(false);

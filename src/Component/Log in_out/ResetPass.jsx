@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import axios from "axios";
-export default () => {
+
+export default function ResetPass () {
   const nameRef = useRef("");
   const FumRef = useRef("");
   function Send(event) {
