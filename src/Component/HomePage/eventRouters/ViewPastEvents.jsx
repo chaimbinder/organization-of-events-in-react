@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-export default (props) => {
+function ViewPastEvents (props) {
   const { setEventClick } = props;
   const [arrEvent, setArrEnent] = useState(null);
   const navigate = useNavigate();
@@ -25,11 +25,11 @@ export default (props) => {
             arrEvent.map((item, index) => {
               return (
                 <div className="col" key={index}>
-                  <div className="card" style={{ width: "18rem" }}>
+                  <div className="card" style={{ width: "10rem" }}>
                     <img
                       style={{
-                        width: "18rem",
-                        height: "12rem",
+                        width: "10rem",
+                        height: "8rem",
                         backgroundSize: "cover",
                         float: "left",
                       }}
@@ -63,3 +63,4 @@ export default (props) => {
     </>
   );
 };
+export default ViewPastEvents

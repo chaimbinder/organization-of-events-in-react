@@ -13,7 +13,7 @@ function Pay() {
   }, [inputValue]);
   return (
     // <div className="pay_container">
-    <div className="pay">
+    <div className="pay"  style={{ textAlign: "center", margin: "auto" }}>
       <input
         type="number"
         style={{ width: "250px", textAlign: "center", margin: "auto" }}
